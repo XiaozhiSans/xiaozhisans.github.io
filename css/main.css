@@ -1,0 +1,84 @@
+@import url('../plugins/firacode/distr/fira_code.css'); /* fira code */
+@import url('./tomorrow-night-bright.min.css'); /* hljs主题 */
+
+[itemprop="articleBody"] a {
+	display: inline-flex;
+	align-items: center;
+	color: #4cf04c;
+	transition: color 0.4s ease, text-decoration 0.4s ease;
+}
+[itemprop="articleBody"] a:hover {
+	color: #4cf04c80;
+	text-decoration: underline;
+}
+[itemprop="articleBody"] a[href^="http"]::after {
+	display: inline-block;
+	content: '';
+	background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="yellow"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>') no-repeat;
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.5em;
+	text-decoration: none;
+}
+[itemprop="articleBody"] a[class="headerlink"]::before {
+	content: '#' !important;
+}
+
+
+.kratos-cover .desc h2,.kratos-cover .desc span {
+	color: #acacff;
+	text-shadow: 4px 8px 12px #000;
+}
+
+#footer { /* 抬高底栏 以便为aplayer提供足够的空间 */
+	padding-bottom: 32px;
+}
+
+pre, code, pre span {
+	font-family: 'Fira Code', 'Segoe UI Symbol', '黑体', monospace !important;
+	font-variant-ligatures: normal; /* 启用连字特性 */
+}
+pre:has(code:only-of-type) .caption span {
+	font-family: '微软雅黑', 'Microsoft YaHei', sans-serif !important;
+}
+
+/* aplayer美化 */
+.aplayer-info {
+	color: #0ff !important;
+	border-color: #1f1f1f !important;
+	background-color: #333 !important;
+}
+.aplayer-miniswitcher {
+	background-color: #222 !important;
+}
+.aplayer-list {
+	color: #0ff !important;
+	background-color: #000 !important;
+	border-color: #1f1f1f !important;
+}
+.aplayer-list ol li {
+	border-color: #1f1f1f !important;
+}
+.aplayer .aplayer-list ol li .aplayer-list-author {
+	color: #ccc !important;
+}
+.aplayer-list-light {
+	background-color: #ff1493 !important;
+}
+.aplayer .aplayer-list ol li:hover {
+	background-color: #004055 !important;
+}
+.aplayer-list-index {
+	color: #4cf04c !important;
+}
+.aplayer-lrc {
+	text-shadow: 1px 1px 0px #fff !important;
+}
+.aplayer .aplayer-lrc p {
+	color: #fff !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+	color: #ff1493 !important;
+}

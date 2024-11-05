@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-Hans-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>qtail | qq昵称小尾巴生成器</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="./favicon.png" />
+		<link rel="stylesheet" type="text/css" href="./assets/qtail.next.css" />
+		<style type="text/css" id="inpage-css-entry">
+			body {
+				background: url(./assets/images/img0.jpg) fixed no-repeat center center;
+			}
+		</style>
+		<link rel="manifest" href="./qtail.webmanifest" type="application/manifest+json" />
+		<link rel="apple-touch-icon" href="./favicon.png" type="image/png" />
+	</head>
+
+	<body>
+		<main>
+			<span class="header_panel">
+				<header>qtail | qq昵称小尾巴生成器</header>
+				<span class="btns_panel">
+					<button class="icon" type="button" title="最小化" id="min-btn">
+						<i class="fa-solid fa-window-minimize"></i>
+					</button>
+					<button class="icon" type="button" title="最大化" id="max-btn">
+						<i class="fa-solid fa-expand"></i>
+					</button>
+					<button class="icon danger" type="button" title="关闭" id="close-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+				</span>
+			</span>
+
+			<div class="content_box">
+				<form id="qtail-form">
+					<p id="hitokoto">(^_^) 正在加载一言...</p>
+					<label for="nick">昵称 <font color="yellow">*</font> :</label>
+					<input type="text" id="nick" name="nick" placeholder="qtail" required />
+					<label for="tail">尾巴 <font color="yellow">*</font> :</label>
+					<input type="text" id="tail" name="tail" placeholder="喵~" required />
+					<p></p>
+					<span style="display: inline-flex; justify-content: space-between;"><label for="result">结果:</label><button title="复制" type="button" class="icon" id="copy-btn"><i class="fa-solid fa-clipboard"></i></button></span>
+					<input type="text" id="result" name="result" readonly />
+				</form>
+			</div>
+		</main>
+
+		<footer style="text-align: center;">
+			<span>
+				Copyright (c) 2024 <a href="https://xsawa.us.kg/XiaozhiSans/" target="_blank" rel="noopener noreferrer">XiaozhiSans</a>. All rights reserved. <br />
+				This website is not affiliated with Tencent or Qzone. &nbsp; Powered by <a href="https://github.com/XiaozhiSans/qtail-js" target="_blank" rel="noopener noreferrer">qtail.js</a> <i id="qtail-version"></i>.
+			</span>
+		</footer>
+
+		<script type="text/javascript" src="./assets/main.js"></script>
+	</body>
+</html>

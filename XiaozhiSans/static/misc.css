@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "ZCool Regular";
+	src: url('./站酷快乐体2020修订版1.woff2') format('woff2');
+}
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+.aplayer-info {
+	background-color: #000 !important;
+	color: #fff;
+}
+.aplayer-miniswitcher {
+	background-color: skyblue !important;
+}
+.title-img {
+	position: fixed;
+	top: 0; left: 0;
+	width: 32vw;
+	height: auto;
+	filter: drop-shadow(2px 4px 16px #000);
+	z-index: 100;
+}
+#alive-time {
+	color: #fff;
+}
+.fa-brands {
+	transition: transform 2s;
+}
+.fa-brands:hover {
+	transform: rotate(360deg);
+}
+a {
+	color: #ff0;
+}
+a:hover {
+	color: #ff2;
+}
+a:visited {
+	color: #ff6;
+}
+body {
+	font-family: "ZCool Regular", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+video.background-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* width: 100%; */ /* 不知道为什么设置成100%会导致视频不能覆盖全屏 */
+	height: 100%;
+	z-index: -10;
+}
+
+.icon-btn {
+	transition: opacity 0.6s;
+}
+.icon-btn:hover {
+	opacity: 0.6;
+}
+.icon-btn.clicked i {
+	opacity: 1;
+	animation: rotate 0.4s linear infinite;
+}
